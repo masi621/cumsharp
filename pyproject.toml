@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cumsharp-editor"
+version = "0.1.0"
+description = "A desktop code editor for the Cum# language (.cum files)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "OpenAI" }
+]
+license = { text = "MIT" }
+dependencies = [
+  "PySide6>=6.7"
+]
+keywords = ["editor", "cumsharp", "cum#", "debianmoss", "mosspkg"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: X11 Applications :: Qt",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Editors"
+]
+
+[project.scripts]
+cumsharp-editor = "cumsharp_editor.app:main"
+
+[tool.setuptools.packages.find]
+include = ["cumsharp_editor*"]

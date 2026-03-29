@@ -1,0 +1,7 @@
+{
+  "name": "Cum# Editor",
+  "exec": "cumsharp-editor",
+  "icon": "accessories-text-editor",
+  "terminal": false,
+  "categories": "Development;TextEditor;IDE;"
+}

@@ -1,0 +1,17 @@
+use std.io;
+
+fn greet(name: String) -> Void {
+    print("hello, ${name} from Cum#");
+}
+
+fn main() -> Int {
+    let mut user: String = "MOSS";
+
+    if user != "" {
+        greet(user);
+    } else {
+        print("no user set");
+    }
+
+    return 0;
+}
